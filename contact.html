@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <title>Mourad Latoui Website</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header></header>
+      <div class="content">
+        <div class="sidebar">
+          <div class="profile">
+            <img
+              src="images/profile_picture.jpg"
+              alt="profile picture"
+              width="200"
+              height="200"
+              class="nav-pic"
+            />
+          </div>
+          <div class="list">
+            <ul>
+              <li>
+                <a href="index.html">
+                  <span class="icon"><i class="fas fa-user"></i></span>
+                  <span class="item">ABOUT ME</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="academic.html">
+                  <span class="icon"
+                    ><i class="fas fa-graduation-cap"></i
+                  ></span>
+                  <span class="item">ACADEMIC</span>
+                </a>
+              </li>
+              <li>
+                <a href="professional.html">
+                  <span class="icon"><i class="fas fa-briefcase"></i></span>
+                  <span class="item">PROFESSIONAL</span>
+                </a>
+              </li>
+              <li>
+                <a href="contact.html">
+                  <span class="icon"><i class="fas fa-phone"></i></span>
+                  <span class="item">CONTACT</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main">
+          <div>
+            <h1><i class="fas fa-phone"></i>&nbsp;CONTACT ME</h1>
+            <br />
+            <form
+              action="http://localhost:443/scripts/personalWebPage.php"
+              method="post"
+              class="contact-form"
+            >
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+              />
+              <label for="email">E-mail:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                required
+              />
+              <label for="subject">Subject:</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="10"
+                placeholder="Enter your message here"
+                required
+              ></textarea>
+              <input id="submit-button" type="submit" value="Send Now" />
+            </form>
+            <br />
+            <div class="download-cv">
+              <a href="./files/resume_en.pdf" target="_blank" download>
+                <span class="icon"><i class="fas fa-download"></i></span>
+                <span class="item">DOWNLOAD ENGLISH RESUME</span>
+              </a>
+              <a href="./files/resume_fr.pdf" target="_blank" download>
+                <span class="icon"><i class="fas fa-download"></i></span>
+                <span class="item">TELECHARGER CV EN FRANCAIS</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer></footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  grid-gap: 0.5em;
+  padding: 0.5em;
+}
+.contact-form input {
+  padding: 0.5em;
+}
+
+#submit-button {
+  text-decoration: none;
+  border-bottom: 1px solid orangered;
+  color: #ccc;
+  background-color: #444;
+}
+
+#submit-button:hover {
+  background-color: orangered;
+  text-shadow: #000 3px 3px 5px;
+  color: #fff;
+}
+
+.download-cv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  grid-gap: 5px 5px;
+}
+
+.download-cv a {
+  text-decoration: none;
+  max-width: 100%;
+  border: 1px solid orangered;
+  padding: 1em;
+  font-weight: bold;
+  color: #000;
+}
+
+.download-cv a:hover {
+  color: #fff;
+  text-shadow: #000 3px 3px 5px;
+  background-color: orangered;
+}
+@media screen and (max-width: 900px) {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+}
